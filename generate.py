@@ -343,7 +343,7 @@ def generate_seq_order():
     return res_close
 
 def go_smaller(seq):
-    '''minimalizing the knots by performing different transformation. Some transformation do not reduce
+    '''minimalizing the knots by performing different transformation. These are inspired by BFACF algorithm in Cube Lattice. Some transformation do not reduce
     such as AB to BA. Some transformation reduce by two such as BAB to A.
     In this method, choose a place in the sequence. Randomly apply the transformation to that part of sequence, and the start over'''
     
